@@ -129,3 +129,8 @@ main img {
 .button{
     display: none;
 }
+
+/* Menu Toggle */
+.menu-toggle:hover {
+    cursor: pointer;
+}
