@@ -1,0 +1,121 @@
+@media (max-width: 900px) {
+ body {
+    width: 100%;
+    font-size: 50%;
+ } 
+ #bg2 {
+    display: none;
+}
+
+header {
+    height: 9.5rem;
+    margin: 3.7rem 2.5rem 0 2.5rem ;
+    padding: 0;
+    border-bottom: 1px solid var(--border);;
+}
+
+header img.logo-desktop {
+    display: none;
+}
+.logo-mobile {
+    display: flex;
+}
+.logo-mobile img {
+    width: 17rem;
+}
+
+.content-mobile {
+margin: 8.8rem 0 0;
+}
+
+.button {
+order: -1;
+margin: 8.8rem 0 9.8rem;
+}  
+
+    nav,
+    header button {
+        display: none;
+    }
+.menu-toggle,
+.content-mobile{
+    display: flex;
+}
+.contents-mobile {
+    font-size: 3rem;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-mobile {
+    margin: 4rem 0;
+    width: 80%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+main h1, h2 {
+    font-size: 5rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin: 4rem 0;
+    line-height: 0;
+
+}
+
+.button img {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+ .rocket-coffee{
+    width: 46.2rem;
+}
+
+} 
+
+@media (max-width: 680px) {
+    main h2 {
+        font-size: 5rem;
+    }
+}
+
+
+@media (max-width: 428px) {
+.content-mobile {
+    margin: 8.8rem 0 0;
+}
+
+.button {
+    order: -1;
+    margin: 8.8rem 0 9.8rem;
+}
+
+    .rocket-coffee{
+        width: 43rem;
+        margin-top: 2.5rem;
+    }
+
+}
+@media (max-width: 400px) {
+   
+
+    main h2{
+        font-size: 4rem;
+    }
+    img.rocket-coffee {
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,131 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+
+html {
+    font-size: 62.5% ;/* === 10px */
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: var(--backgrond);
+    color: #FFF;
+
+    position: relative;
+}
+
+header {
+    width: min(918px, 90%);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem auto 4rem;
+}
+
+header img {
+    width: 43px;
+    margin-left: 20px;
+    padding: 15px 0;
+  }
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 2rem 3rem;
+    transition: all 250ms linear 0s;
+}
+
+
+header nav ul li:hover {
+  color: var(--button);
+  cursor: pointer;
+}
+ 
+ button, .button{
+    background: transparent;
+    color: #fff;
+    border-radius: .6rem;
+    border: 1px solid var(--button);
+    padding: 1.1rem 3.8rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 250ms linear 0s;
+
+}
+
+ button:hover, .button {
+    cursor: pointer;
+    background: var(--button);
+}
+
+#bg1, #bg2 {
+    position: absolute;
+
+    width: 321px;
+    height: 321px;
+    z-index: -1;
+}
+
+#bg1 {
+    bottom: 25.4rem;
+    left: 0;
+}
+
+#bg2 {
+    top: -20rem;
+    right: 29.8rem;
+}
+
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main  h2 {
+    font-size: 8rem;
+}
+
+h2:nth-child(2) {
+    color: var(--backgrond);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+main img {
+    margin: .35rem auto ;
+}
+
+
+.menu-toggle,
+.logo-mobile,
+.content-mobile,
+.blur-mobile,
+.button{
+    display: none;
+}
