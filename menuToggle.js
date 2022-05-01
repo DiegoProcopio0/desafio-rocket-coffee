@@ -1,10 +1,12 @@
 let show = true;
 
-const menuToggle = document.querySelector(".menu-toggle");
+const navMenuToggle = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".menu-toggle-Hamburguer");
 
 menuToggle.addEventListener("click", () => {
   document.body.style.overflow = show ? "hidden" : "initial";
 
-  menuSection.classList.toggle("on", show);
+  navMenuToggle.classList.toggle("on", show);
   show = !show;
+
 });
