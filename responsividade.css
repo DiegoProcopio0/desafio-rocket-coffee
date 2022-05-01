@@ -23,7 +23,7 @@
 
 header {
     height: 9.5rem;
-    margin: 3.7rem 2.5rem 0 2.5rem ;
+    margin: 3.7rem auto 0 ;
     padding: 0;
     border-bottom: 1px solid var(--border);;
 }
@@ -38,6 +38,9 @@ header img.logo-desktop {
     width: 17rem;
 }
 
+div.images-menu-toggle img {
+    width: 4rem;
+}
 .content-mobile {
 margin: 8.8rem 0 0;
 }
@@ -118,6 +121,8 @@ nav.on {
     z-index: 10;
 
     background: var(--backgrond);
+    
+    margin: 0 auto;
 }
 
 nav.on ul {
@@ -128,12 +133,10 @@ nav.on ul {
 
 header nav.on ul li {
     width: 90vw;
-    padding: 0;
-    margin: 1.4rem auto 0 2.4rem;
-    padding: 0 0 1.4rem 1rem;
+    margin: 0 auto 0 2.4rem;
+    padding: 1.4rem 0 1.4rem 1rem;
     border-bottom: 1px solid var(--border);
 }
-
 
 } 
 
@@ -151,6 +154,7 @@ header nav.on ul li {
     #bg1 img{
         width: 100vw;
     }
+  
 
 }
 
@@ -183,11 +187,14 @@ header nav.on ul li {
         right: 0;
         width: 100%;
     }
+    div.images-menu-toggle img {
+        width: 2.4rem;
+    }
 }
 @media (max-width: 400px) {
-
-
-  
+    header {
+        margin: 3.7rem auto 0;
+    }
     .blur-mobile img {
         width: 100vw;
     }

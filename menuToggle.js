@@ -8,4 +8,11 @@ menuToggle.addEventListener("click", () => {
 
   navMenuToggle.classList.toggle("on", show);
   show = !show;
+
+  if (document.body.style.overflow == "hidden") {
+    menuToggle.src = "./assets/menu-buguer-close.svg";
+  }
+  if (document.body.style.overflow == "initial") {
+    menuToggle.src = "./assets/menu-buguer-open.svg";
+  }
 });
