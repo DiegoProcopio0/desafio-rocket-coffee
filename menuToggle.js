@@ -8,5 +8,4 @@ menuToggle.addEventListener("click", () => {
 
   navMenuToggle.classList.toggle("on", show);
   show = !show;
-
 });

@@ -91,8 +91,8 @@ main h1, h2 {
 }
 /* Menu Toggle */
 
-ul {
-    display: none;
+header nav ul {
+    display: none
 }
 
 nav.on {
