@@ -45,9 +45,10 @@ header img {
     margin-left: 20px;
     padding: 15px 0;
   }
-  header nav.on ul {
-    display: flex;
-}
+
+  nav {
+      display: flex;
+  }
 
 header nav ul {
     display: flex;
@@ -134,6 +135,16 @@ main img {
 }
 
 /* Menu Toggle */
-.menu-toggle:hover {
+.menu-toggle-Hamburguer:hover {
     cursor: pointer;
+}
+
+nav.menu-toggle,
+nav.menu-toggle ul
+ {
+    display: flex;
+}
+
+ img.menu-toggle-Hamburguer {
+    display: none;
 }
