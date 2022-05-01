@@ -3,6 +3,7 @@
     width: 100%;
     font-size: 50%;
  }
+
  nav.menu-toggle,
  nav.menu-toggle ul
   {
@@ -12,13 +13,7 @@
  img.menu-toggle-Hamburguer {
     display: flex;
 }
- #bg1 {
-    left: -7rem;
- }
 
- #bg2 {
-    display: none;
-}
 
 
 header {
@@ -40,6 +35,8 @@ header img.logo-desktop {
 
 div.images-menu-toggle img {
     width: 4rem;
+    transition: all 0.3s ease 0s;
+
 }
 .content-mobile {
 margin: 8.8rem 0 0;
@@ -123,6 +120,8 @@ nav.on {
     background: var(--backgrond);
     
     margin: 0 auto;
+    transition: all 0.3s ease 0s;
+
 }
 
 nav.on ul {
@@ -136,6 +135,14 @@ header nav.on ul li {
     margin: 0 auto 0 2.4rem;
     padding: 1.4rem 0 1.4rem 1rem;
     border-bottom: 1px solid var(--border);
+}
+/*================= Blurs ===============*/
+#bg1 {
+    left: -7rem;
+ }
+
+ #bg2 {
+    display: none;
 }
 
 } 
