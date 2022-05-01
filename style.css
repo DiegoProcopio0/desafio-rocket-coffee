@@ -17,12 +17,14 @@
 ::-webkit-scrollbar {
     display: none;
     }
-
+    
+ /*================= Html ===============*/
 html {
     font-size: 62.5% ;/* === 10px */
     font-weight: 400;
 }
 
+ /*================= Body ===============*/
 body {
     font-family: 'Manrope', sans-serif;
     background: var(--backgrond);
@@ -31,6 +33,7 @@ body {
     position: relative;
 }
 
+ /*================= Header ===============*/
 header {
     width: min(918px, 90%);
     height: 5rem;
@@ -49,6 +52,12 @@ header img {
   nav {
       display: flex;
   }
+  
+nav.menu-toggle,
+nav.menu-toggle ul
+ {
+    display: flex;
+}
 
 header nav ul {
     display: flex;
@@ -62,12 +71,12 @@ header nav ul li {
     transition: all 250ms linear 0s;
 }
 
-
 header nav ul li:hover {
   color: var(--button);
   cursor: pointer;
 }
  
+ /*================= Buttons ===============*/
  button, .button{
     background: transparent;
     color: #fff;
@@ -85,6 +94,7 @@ header nav ul li:hover {
     background: var(--button);
 }
 
+ /*================= Blurs ===============*/
 #bg1, #bg2 {
     position: absolute;
 
@@ -103,7 +113,7 @@ header nav ul li:hover {
     right: 29.8rem;
 }
 
-
+ /*================= Main ===============*/
 main {
     text-align: center;
     display: flex;
@@ -125,7 +135,7 @@ main img {
     margin: .35rem auto ;
 }
 
-/* menu toggle  */
+/* menu toggle */
 .menu-toggle,
 .logo-mobile,
 .content-mobile,
@@ -134,15 +144,8 @@ main img {
     display: none;
 }
 
-/* Menu Toggle */
 .menu-toggle-Hamburguer:hover {
     cursor: pointer;
-}
-
-nav.menu-toggle,
-nav.menu-toggle ul
- {
-    display: flex;
 }
 
  img.menu-toggle-Hamburguer {

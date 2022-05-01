@@ -1,8 +1,11 @@
+ /*================= @media (max-width: 900px)  ===============*/
 @media (max-width: 900px) {
  body {
     width: 100%;
     font-size: 50%;
  }
+
+/*================= Displays ===============*/
 
  nav.menu-toggle,
  nav.menu-toggle ul
@@ -14,8 +17,7 @@
     display: flex;
 }
 
-
-
+/*================= Header ===============*/
 header {
     height: 9.5rem;
     margin: 3.7rem auto 0 ;
@@ -38,67 +40,9 @@ div.images-menu-toggle img {
     transition: all 0.3s ease 0s;
 
 }
-.content-mobile {
-margin: 8.8rem 0 0;
-}
 
-.button {
-order: -1;
-margin: 8.8rem 0 9.8rem;
-}  
 
-    nav,
-    header button {
-        display: none;
-    }
-.menu-toggle,
-.content-mobile{
-    display: flex;
-}
-.contents-mobile {
-    font-size: 3rem;
-    display: flex; 
-    align-items: center; 
-    flex-direction: column;
-    text-align: center;
-    width: 100vw;
-}
-
-.content-mobile {
-    margin: 4rem 0;
-    width: 80%;
-}
-
-main {
-    height: 100%;
-    width: 100%;
-}
-
-main h1, h2 {
-    font-size: 5rem;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    margin: 4rem 0;
-    line-height: 0;
-
-}
-
-.button img {
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
-}
-
- .rocket-coffee{
-    width: 46.2rem;
-}
-/* Menu Toggle */
-
+/*================= Menu Toggle ===============*/
 header nav ul {
     display: none
 }
@@ -136,6 +80,60 @@ header nav.on ul li {
     padding: 1.4rem 0 1.4rem 1rem;
     border-bottom: 1px solid var(--border);
 }
+
+        nav,
+        header button {
+            display: none;
+        }
+    .menu-toggle,
+    .content-mobile{
+        display: flex;
+    }
+
+/*================= Content Main ===============*/    
+    main {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contents-mobile {
+        font-size: 3rem;
+        display: flex; 
+        align-items: center; 
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    .content-mobile {
+        margin: 4rem 0;
+        width: 80%;
+    }
+    main h1, h2 {
+        font-size: 5rem;
+    }
+    
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        margin: 4rem 0;
+        line-height: 0;
+        order: -1;
+        margin: 8.8rem 0 9.8rem;
+    }
+    
+    .button img {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+     .rocket-coffee{
+        width: 46.2rem;
+    }
+
 /*================= Blurs ===============*/
 #bg1 {
     left: -7rem;
@@ -147,11 +145,13 @@ header nav.on ul li {
 
 } 
 
+ /*================= @media (max-width: 600px)  ===============*/
 @media (max-width: 680px) {
+    /*================= Content Main ===============*/
     main h2 {
         font-size: 5rem;
     }
-    
+    /*================= Blurs ===============*/
     #bg1 {
         position: absolute;
         bottom: 0;
@@ -165,8 +165,13 @@ header nav.on ul li {
 
 }
 
-
+ /*================= @media (max-width: 428px)  ===============*/
 @media (max-width: 428px) {
+/*=================  Header ===============*/
+div.images-menu-toggle img {
+   width: 2.4rem;
+}
+/*================= Content Main ===============*/
 .content-mobile {
     margin: 8.8rem 0 0;
 }
@@ -175,16 +180,14 @@ header nav.on ul li {
     order: -1;
     margin: 8.8rem 0 9.8rem;
 }
-
     .rocket-coffee{
         width: 43rem;
         margin-top: 2.5rem;
     }
+     /*================= Blurs ===============*/
     #bg1 {
         display: none;
     }
-
-   
     .blur-mobile {
         z-index: -1;
         display: flex;
@@ -194,18 +197,18 @@ header nav.on ul li {
         right: 0;
         width: 100%;
     }
-    div.images-menu-toggle img {
-        width: 2.4rem;
-    }
 }
+
+ /*================= @media (max-width: 400px)  ===============*/
 @media (max-width: 400px) {
+    /*=================  Header ===============*/
     header {
         margin: 3.7rem auto 0;
     }
     .blur-mobile img {
         width: 100vw;
     }
-
+    /*=================  Header ===============*/
     main h2{
         font-size: 4rem;
     }
