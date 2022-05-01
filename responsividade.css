@@ -141,10 +141,17 @@ header nav.on ul li {
     main h2 {
         font-size: 5rem;
     }
-    #bg1 { 
-        width: 100vw;
-
+    
+    #bg1 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
+
+    #bg1 img{
+        width: 100vw;
+    }
+
 }
 
 
@@ -162,11 +169,11 @@ header nav.on ul li {
         width: 43rem;
         margin-top: 2.5rem;
     }
-
     #bg1 {
         display: none;
     }
 
+   
     .blur-mobile {
         z-index: -1;
         display: flex;
@@ -174,11 +181,16 @@ header nav.on ul li {
         bottom: 0;
         left: 0;
         right: 0;
-        width: 100vw;
+        width: 100%;
     }
 }
 @media (max-width: 400px) {
-   
+
+
+  
+    .blur-mobile img {
+        width: 100vw;
+    }
 
     main h2{
         font-size: 4rem;
